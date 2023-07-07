@@ -5,12 +5,12 @@ const api = require('./routes/index.js');
 const app = express();
 const PORT = 3001;
 
-const middleware = (req, res, next) => {
-    // fill out later
-  next();
-};
+// const middleware = (req, res, next) => {
+//     // ????? do i need this????
+//   next();
+// };
 
-app.use(middleware);
+// app.use(middleware);
 
 app.get('/', (req, res) => res.json(`GET route`));
 app.post('/', (req, res) => res.json(`POST route`));
